@@ -1,0 +1,6 @@
+{
+  "name": "Astra - AI Voice Automation Assistant",
+  "description": "Voice-activated AI automation assistant that listens for wake word 'Astra', responds 'Yes Sir, tell me.', executes multi-step system, web, code, and file commands automatically, and confirms 'Done, Sir.'",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
