@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mic, MicOff, Send, Sparkles, Command, CornerDownLeft, Play, AlertCircle, FileCode, Search, Terminal, FolderPlus } from 'lucide-react';
+import { Mic, MicOff, Send, Sparkles, Command, CornerDownLeft, Play, AlertCircle, FileCode, Search, Terminal, FolderPlus, Music, Disc, Radio, Tv } from 'lucide-react';
 import { AstraStatus } from '../types';
 
 interface AstraCommandBarProps {
@@ -15,24 +15,24 @@ interface AstraCommandBarProps {
 
 const EXAMPLE_PRESETS = [
   {
-    label: "Portfolio Project (User Request)",
+    label: "Play Main Agar Kahoon",
+    icon: Music,
+    cmd: "Play Main Agar Kahoon song on YouTube"
+  },
+  {
+    label: "Play Bhojpuri Song",
+    icon: Radio,
+    cmd: "Play Bhojpuri song on YouTube"
+  },
+  {
+    label: "Play Hindi Song",
+    icon: Disc,
+    cmd: "Play Hindi song on YouTube"
+  },
+  {
+    label: "Portfolio Web Project",
     icon: FileCode,
     cmd: "Open VS Code, create an HTML project named Portfolio, generate index.html, style.css and script.js, write the starter code, save all files and open Live Server."
-  },
-  {
-    label: "Web Research & Notes",
-    icon: Search,
-    cmd: "Open Chrome, search for modern web design trends, summarize key points in Notes app, and save file trends.md"
-  },
-  {
-    label: "Fullstack App Terminal",
-    icon: Terminal,
-    cmd: "Open Terminal, create folder ExpressApi, run npm init -y, write server.js starter code and start the server."
-  },
-  {
-    label: "File Organizer",
-    icon: FolderPlus,
-    cmd: "Open File Explorer, create folder Documents/Work, organize files, and list active workspace directory."
   }
 ];
 
